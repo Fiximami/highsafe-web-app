@@ -1,12 +1,73 @@
-# React + Vite
+# HighSafe: Intelligent Road Safety and Emergency System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HighSafe is a smart accident detection and prevention system designed for low-budget vehicles and commercial drivers in Ghana. Inspired by Tesla-like safety features, it leverages IoT and a responsive web dashboard to deliver real-time alerts, emergency triggers, and vehicle diagnostics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## MVP Features
 
-## Expanding the ESLint configuration
+- **Device Setup:** Pair your car with an IoT safety device (ESP32-based).
+- **Dashboard:** Real-time overview of driver and vehicle status.
+- **Vehicle Diagnostics:** Displays smart sensor readings (e.g., crash detection, fuel, tire pressure).
+- **Emergency Trigger:** One-tap button for sending SOS messages to preset emergency contacts.
+- **Live Alerts:** Instant alerts on accidents or dangerous driving behavior.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖥️ Tech Stack
+
+- **Frontend**: Vite + React + Tailwind CSS
+- **Backend/Realtime**: Firebase (planned)
+- **Hardware**: ESP32, sensors (planned)
+- **Version Control**: Git & GitHub
+
+---
+
+## 📁 Folder Structure
+
+```bash
+highsafe-web/
+├── public/
+├── src/
+│   ├── assets/              # Logos, images, icons
+│   ├── components/          # Reusable UI components
+│   ├── pages/               # Dashboard, Emergency, etc.
+│   ├── services/            # Firebase integration (upcoming)
+│   ├── App.jsx              # Main app component
+│   └── main.jsx             # Entry point
+├── tailwind.config.js
+├── postcss.config.cjs
+├── vite.config.js
+└── package.json
+
+Getting Started (Dev Setup)
+
+Clone the repository
+git clone https://github.com/your-username/highsafe-web.git
+
+Navigate to the project
+cd highsafe-web
+
+Install dependencies
+npm install
+
+Run the development server
+npm run dev
+
+👥 Target Audience
+Low-income vehicle owners in Ghana
+
+Commercial transport operators
+
+NGOs and road safety authorities
+
+Tech-based vehicle insurers
+
+🌐 Live Demo (Coming Soon)
+A working MVP demo will be deployed once Firebase and IoT integration are finalized.
+
+🤝 Support & Collaboration
+This project is part of the GAIAthon'25 innovation challenge. We're open to partnerships, sponsorships, and contributions to scale this impact for road safety in Africa.
+
+License
+This project is licensed under the MIT License.
